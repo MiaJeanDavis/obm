@@ -7,8 +7,8 @@ const app = express()
 app.set('view engine', 'ejs')
 
 /* Serve pelican-generated output files */
-app.use('/', express.static(path.resolve(__dirname, './output')))
-
+// app.use('/', express.static(path.resolve(__dirname, './output')))
+app.use(express.static(path.resolve(__dirname, './output'),{extensions:['html']}));
 // Routes
 app.get('/', function (req, res) {
     res.render('output/index.html')
