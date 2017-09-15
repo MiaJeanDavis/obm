@@ -1,0 +1,57 @@
+@import "./general";
+@import "./videos";
+
+/* Modals */
+.modal-dialog {
+    margin-top: 90px!important;
+}
+.modal-content {
+    background: #1f364d;
+    text-align: center;
+
+    .modal-header {
+	background: #274059;
+	border:none;
+	position: relative;
+	.close {
+	    color:white;
+	    position: absolute;
+	    top: 5px;
+	    right: -10px;
+	}
+    }
+    p, b {
+	color: white;
+	a {
+	    color: white;
+	    font-weight: bold;
+
+	    text-decoration: underline;
+	}
+    }
+}
+
+/* Pagination */
+/* Pagination */
+.pagination {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+
+    .fa {
+	margin-top: 6px;
+	color: #999;
+    }
+}
+
+
+/* Footer */
+footer {
+    min-height: 40px;
+    padding: 20px;
+    background-color: #091a2b;
+    color:#274059;
+    text-align:center;
+}
+

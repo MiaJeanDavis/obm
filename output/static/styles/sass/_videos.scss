@@ -1,0 +1,245 @@
+
+.course {
+    article {
+	background: #1f364d;
+	color: #9cb3c9;
+	box-shadow: 0 0 8px #0c1f31;
+	
+	margin-top: 0;
+	text-align:center;
+	padding:0;
+	padding-top: 10px;
+	h1 {
+	    border: none;
+	    font-family: "Lato";
+	    font-family: "Source Sans Pro", sans-serif;
+	    font-weight: 300;
+	    margin:0;
+	    color:white;	    
+	}
+	p {
+	    color:#b9c9da;
+	    
+	}
+	.btn-cta {
+	    margin: 20px;
+	    width: calc(100% - 40px);
+	}
+
+	.subscription-form {
+	    margin: 20px;
+	    margin-top: 0;
+	    .email-field {
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+		font-size: 18px;
+		color: white;
+		z-index: 10;
+		position: relative;
+	    }
+	    .email-field::-webkit-input-placeholder {
+		font-weight: normal;
+		color:#b9c9da;	    
+	    }
+
+	    .btn-cta {
+		color: white;
+		text-transform: uppercase;
+		width: 100%;
+		padding: 35px;
+		margin: 0;
+		span {
+		    color: white;
+		    text-transform: uppercase;
+		}
+		font-size: 15px;
+		line-height: 6px;
+		.bolder {
+		    font-size: 23px;
+		    font-weight: bold;
+		}
+
+	    }
+	}
+	
+    }
+    .video-list {
+	margin-right: -20px;
+	margin: 4px 0;
+	margin-right: -4px;
+	overflow: hidden;
+	.video {
+	    margin-bottom: 4px;
+	    width: calc(25% - 4px);
+	    float:left;
+	    margin-right: 4px;
+	    cursor: pointer;
+	    position: relative;
+	    .overlay {
+		background: rgba(0,0,0,0.1);
+		top:0;
+		bottom:0;
+		width: 100%;		
+		position: absolute;
+		text-align:center;
+	    }
+	}
+	.overlay.active{
+	    border: 2px solid #4799eb;
+	}
+	img {
+	    width: 100%;
+	}
+    }
+
+}
+
+
+/* VideoJS */
+
+.vjs-big-play-button {
+    display: flex;
+    top: calc(50% - 22.5px)!important;
+    left: calc(50% - 45px)!important;
+    border-radius: 0!important;
+    padding: 22px!important;
+    
+}
+.vjs-big-play-button {
+    display: none!important;
+}
+.vjs-default-skin .vjs-control-bar {
+    display: flex!important;
+    height: 42px;
+    background-color: #2B333F;
+
+    visibility: visible!important;
+    opacity: 1!important;
+}
+.vjs-button > .vjs-icon-placeholder:before {
+    line-height: 42px;
+}
+
+
+.vjs-remaining-time-display {
+    line-height: 42px;
+}
+.vjs-volume-control, .vjs-playback-rate {
+    margin-top: 6px!important;
+    /* Don't hide on mobile */
+    /* display: flex!important; */
+}
+/* Playback speed menu */
+.vjs-menu li.vjs-selected,
+.vjs-menu li.vjs-selected:focus,
+.vjs-menu li.vjs-selected:hover {
+    background-color: #2b333f;
+    background-color: rgba(115,133,159,0.5);
+}
+.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+    background-color: #2B333F;
+    /* background-color: rgba(43,51,63,0.7); */
+}
+
+.vjs-menu-item {
+    padding: 5px 0;
+}
+.vjs-menu {
+    z-index: 100;
+}
+
+#vjs-image-overlay-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 42px)!important;    
+}
+#vjs-image-overlay-holder img {
+    height: 100%;
+    width: 100%;    
+}
+
+
+.courses {
+    h1, h2 {
+	text-align: center;
+    }
+    .courses-dropdown {
+	float: right;
+    }
+    h2 {
+	font-size: 20px;
+    }
+    .courses-wrapper {
+	margin-right: -20px;
+    }
+    
+    .course {
+	margin-top: 20px;
+	margin-right: 20px;	
+	float: left;
+	width: calc(33.3% - 20px);
+	@media  (max-width: 540px) {
+	    width: 100%;
+	}
+	padding: 0;
+	box-shadow: 0 1px 4px rgba(0,0,0,.04);
+	/* border: 1px solid rgba(0,0,0,.09); */
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 160ms;
+	background-color: #274059;
+	border-radius: 3px;
+	box-shadow: 0 0 8px #0c1f31;
+    
+	h1 {
+	    border: none;
+	    font-family: "Lato";
+	    font-family: "Source Sans Pro", sans-serif;
+	    font-weight: 300;
+	    margin:0;
+	    color:white;	    
+	}
+	img {
+	    width: calc(100% + 6px);
+	    max-width: calc(100% + 6px);	    
+	    margin: -3px;
+	}
+	.description {
+	    padding: 20px;
+	    padding-top: 15px;
+	    height: 81px;	    
+	    color: white;
+	}
+    }
+}
+
+
+ .courses, .course {
+     /* Css magic that keeps it 16x9, background in the center. */
+     /* It's just an image, style other things elsewhere. */
+     .wrapper {
+	 width: 100%;
+	 position: relative;
+     }
+     .wrapper:after {
+	 padding-top: 56.25%;
+	 /* 16:9 ratio */
+	 display: block;
+	 content: '';
+     }	
+     .thumbnail {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 right: 0;
+	 left: 0;	    
+	 background-position: 50% 50%;
+	 background-size: cover;
+
+	 margin: 0;
+	 border: none;
+	 background-color: #1f364d;
+     }
+ }

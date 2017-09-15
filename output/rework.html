@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/styles/css/vendor.css">
+    <link rel="stylesheet" href="/static/styles/css/style.css">
+    <!-- Scripts -->
+    <script src="/static/js/vendor/jquery.min.js"></script>
+    <script src="/static/js/vendor/tether.min.js"></script>
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
+    <script src="/static/js/vendor/js.cookie.js"></script>
+    <script src="/static/js/vendor/jquery.query-object.js"></script>
+    <script src="/static/js/obv.js"></script>
+
+<title>Rework</title>
+</head>
+
+<body>
+
+<div class="page">
+<div class="course">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+	<article>
+	  <h1>Rework</h1>
+	  <!-- Player -->
+	  <video
+	     id="video"
+	     class="video-js vjs-default-skin vjs-fluid"
+	     controls
+	     autoplay
+	     width="960" height="540"
+	     data-setup='{ "techOrder": ["youtube"],
+	     "playbackRates": [ 0.75, 1, 1.25, 1.5, 2] }'
+	     >
+	  </video>	
+
+	  <!-- Playlist container -->
+	  <div class="video-list"></div>
+
+	  <!-- Paypal Button -->
+
+	  
+	  <!-- If it's a premium course - lead to vault -->
+	  <div class="subscription-form">
+	    <a href="/vault" class="btn btn-cta">
+	      Course library
+	    </a>
+	  </div>
+	  <br/>	  
+	</article>
+      </div> <!-- End col-md-12 -->
+    </div>   <!-- End .row -->
+
+    <!-- Suggestions -->
+  </div>  <!-- end .container -->
+</div>	<!-- End .video-course -->
+
+
+<!-- Generate playlist -->
+<script>
+var slug = "rework"
+var videos = [ "4H9JqFAp_80" ]
+var playlist = videos.map(function (video, index) {
+    return {
+	sources: [{
+	    src: "https://www.youtube.com/watch?v="+video,
+	    type: "video/youtube",
+	}],
+	poster: "https://img.youtube.com/vi/"+video+"/hqdefault.jpg"
+    }
+})
+</script>
+
+<!-- Video -->
+<script src="/static/js/vendor/video.js"></script>
+<script src="/static/js/vendor/Youtube.min.js"></script>
+<script src="/static/js/vendor/videojs-playlist.min.js"></script>
+<script src="/static/js/vendor/videojs.imageOverlay.js"></script>
+<script src="/static/js/vendor/videojs-remember.js"></script>
+<script src="/static/js/player.js"></script>
+
+</div>
+
+<footer>
+  Contact: contact.obvault@gmail.com
+</footer>
+
+<div id="thankyou-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal">&times;</button>	
+	<h1>Thank you for your purchase!</h1>
+      </div>
+
+      <div class="modal-body">
+	<p>Make sure to bookmark this page so you can return to it later:</p>
+	<p>
+	  <a href="https://obvault.github.io/vault">
+	    https://obvault.github.io/vault
+	  </a>
+	</p>
+	<!-- <p>(I will also email you this link within 24 hours)a</p> -->
+	<p>If you have any questions, don't hesitate to contact me at <b>contact.obvault@gmail.com</b></p>
+      </div>
+    </div>
+  </div>
+</div>	 <!-- End .modal -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,543 @@
+/* General */
+/* line 2, ../sass/_general.scss */
+* {
+  color: white;
+}
+
+/* line 6, ../sass/_general.scss */
+body {
+  background: #0e2439;
+  min-height: 100vh;
+}
+
+/* line 11, ../sass/_general.scss */
+.page {
+  min-height: calc(100vh - 60px);
+}
+
+/* line 16, ../sass/_general.scss */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* line 20, ../sass/_general.scss */
+::-webkit-scrollbar-track {
+  background-color: #F2F2F2;
+}
+
+/* line 24, ../sass/_general.scss */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(110, 110, 110, 0.2);
+}
+
+/* Bootstrap customize */
+/* Remove padding on mobile */
+/* line 30, ../sass/_general.scss */
+.container {
+  max-width: 800px;
+}
+@media (max-width: 1024px) {
+  /* line 30, ../sass/_general.scss */
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 37, ../sass/_general.scss */
+  .col-md-12, .col-sm-12 {
+    padding: 0;
+  }
+}
+
+/* line 46, ../sass/_general.scss */
+.btn {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+/* line 50, ../sass/_general.scss */
+.btn:hover, .btn:active, .btn:focus, .btn:visited {
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Helpers */
+/* line 59, ../sass/_general.scss */
+.left {
+  float: left;
+}
+
+/* line 63, ../sass/_general.scss */
+.right {
+  float: right;
+}
+
+/* line 66, ../sass/_general.scss */
+.centered {
+  margin: auto;
+}
+
+/* line 69, ../sass/_general.scss */
+.center-text {
+  text-align: center;
+}
+
+/* line 72, ../sass/_general.scss */
+.hidden {
+  display: none;
+}
+
+/* line 76, ../sass/_general.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* Typography */
+/* line 82, ../sass/_general.scss */
+h1, h2, h3, h4 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* line 86, ../sass/_general.scss */
+h1 {
+  font-size: 1.8em;
+}
+
+/* line 90, ../sass/_general.scss */
+a {
+  cursor: pointer;
+}
+/* line 92, ../sass/_general.scss */
+a:hover, a:active, a:focus, a:visited {
+  text-decoration: none;
+}
+
+/* line 98, ../sass/_general.scss */
+article h1 {
+  /* font-size: 36px; */
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 1px solid #dddddd;
+  line-height: 50px;
+  margin-top: 0;
+  color: white;
+}
+
+/* line 107, ../sass/_general.scss */
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 111, ../sass/_general.scss */
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 116, ../sass/_general.scss */
+article p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* line 122, ../sass/_general.scss */
+.btn-cta {
+  font-family: "Lato";
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px 40px;
+  margin: 0;
+  width: 100%;
+  background: #eb5d00;
+  color: #fff;
+  font-weight: 300;
+  background: linear-gradient(to bottom, #ff6500, #f84200);
+  background: linear-gradient(to bottom, #0086ff, #006cf8);
+  /*blue*/
+  background: #4799eb;
+  box-shadow: 0 0 30px 2px rgba(34, 34, 34, 0.5);
+  white-space: normal;
+}
+/* line 138, ../sass/_general.scss */
+.btn-cta:hover, .btn-cta:active, .btn-cta:focus, .btn-cta:visited {
+  background: linear-gradient(to bottom, #ff6500, #f84200);
+  background: linear-gradient(to bottom, #0086ff, #006cf8);
+  /*blue*/
+  background: #4799eb;
+  box-shadow: 0 0 30px 2px rgba(34, 34, 34, 0.5);
+}
+
+/* line 146, ../sass/_general.scss */
+.btn-outline {
+  border: 1px solid #274059;
+}
+
+/* Dropdown */
+/* line 151, ../sass/_general.scss */
+.dropdown {
+  float: left;
+  margin-right: 5px;
+}
+/* line 154, ../sass/_general.scss */
+.dropdown li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* line 160, ../sass/_general.scss */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  min-width: 100%;
+  background: none;
+  /* border: 1px solid #274059;     */
+}
+/* line 165, ../sass/_general.scss */
+.dropdown:hover .dropdown-menu li a {
+  text-transform: capitalize;
+  background: #0e2439;
+  border: 1px solid #274059;
+  color: white;
+  margin: 0 -1px;
+}
+/* line 171, ../sass/_general.scss */
+.dropdown:hover .dropdown-menu li a:hover {
+  background: #274059;
+}
+
+/* line 3, ../sass/_videos.scss */
+.course article {
+  background: #1f364d;
+  color: #9cb3c9;
+  box-shadow: 0 0 8px #0c1f31;
+  margin-top: 0;
+  text-align: center;
+  padding: 0;
+  padding-top: 10px;
+}
+/* line 12, ../sass/_videos.scss */
+.course article h1 {
+  border: none;
+  font-family: "Lato";
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  color: white;
+}
+/* line 20, ../sass/_videos.scss */
+.course article p {
+  color: #b9c9da;
+}
+/* line 24, ../sass/_videos.scss */
+.course article .btn-cta {
+  margin: 20px;
+  width: calc(100% - 40px);
+}
+/* line 29, ../sass/_videos.scss */
+.course article .subscription-form {
+  margin: 20px;
+  margin-top: 0;
+}
+/* line 32, ../sass/_videos.scss */
+.course article .subscription-form .email-field {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+/* line 41, ../sass/_videos.scss */
+.course article .subscription-form .email-field::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #b9c9da;
+}
+/* line 46, ../sass/_videos.scss */
+.course article .subscription-form .btn-cta {
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 35px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 6px;
+}
+/* line 52, ../sass/_videos.scss */
+.course article .subscription-form .btn-cta span {
+  color: white;
+  text-transform: uppercase;
+}
+/* line 58, ../sass/_videos.scss */
+.course article .subscription-form .btn-cta .bolder {
+  font-size: 23px;
+  font-weight: bold;
+}
+/* line 67, ../sass/_videos.scss */
+.course .video-list {
+  margin-right: -20px;
+  margin: 4px 0;
+  margin-right: -4px;
+  overflow: hidden;
+}
+/* line 72, ../sass/_videos.scss */
+.course .video-list .video {
+  margin-bottom: 4px;
+  width: calc(25% - 4px);
+  float: left;
+  margin-right: 4px;
+  cursor: pointer;
+  position: relative;
+}
+/* line 79, ../sass/_videos.scss */
+.course .video-list .video .overlay {
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+/* line 88, ../sass/_videos.scss */
+.course .video-list .overlay.active {
+  border: 2px solid #4799eb;
+}
+/* line 91, ../sass/_videos.scss */
+.course .video-list img {
+  width: 100%;
+}
+
+/* VideoJS */
+/* line 101, ../sass/_videos.scss */
+.vjs-big-play-button {
+  display: flex;
+  top: calc(50% - 22.5px) !important;
+  left: calc(50% - 45px) !important;
+  border-radius: 0 !important;
+  padding: 22px !important;
+}
+
+/* line 109, ../sass/_videos.scss */
+.vjs-big-play-button {
+  display: none !important;
+}
+
+/* line 112, ../sass/_videos.scss */
+.vjs-default-skin .vjs-control-bar {
+  display: flex !important;
+  height: 42px;
+  background-color: #2B333F;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* line 120, ../sass/_videos.scss */
+.vjs-button > .vjs-icon-placeholder:before {
+  line-height: 42px;
+}
+
+/* line 125, ../sass/_videos.scss */
+.vjs-remaining-time-display {
+  line-height: 42px;
+}
+
+/* line 128, ../sass/_videos.scss */
+.vjs-volume-control, .vjs-playback-rate {
+  margin-top: 6px !important;
+  /* Don't hide on mobile */
+  /* display: flex!important; */
+}
+
+/* Playback speed menu */
+/* line 134, ../sass/_videos.scss */
+.vjs-menu li.vjs-selected,
+.vjs-menu li.vjs-selected:focus,
+.vjs-menu li.vjs-selected:hover {
+  background-color: #2b333f;
+  background-color: rgba(115, 133, 159, 0.5);
+}
+
+/* line 140, ../sass/_videos.scss */
+.vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+  background-color: #2B333F;
+  /* background-color: rgba(43,51,63,0.7); */
+}
+
+/* line 145, ../sass/_videos.scss */
+.vjs-menu-item {
+  padding: 5px 0;
+}
+
+/* line 148, ../sass/_videos.scss */
+.vjs-menu {
+  z-index: 100;
+}
+
+/* line 152, ../sass/_videos.scss */
+#vjs-image-overlay-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 42px) !important;
+}
+
+/* line 158, ../sass/_videos.scss */
+#vjs-image-overlay-holder img {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 165, ../sass/_videos.scss */
+.courses h1, .courses h2 {
+  text-align: center;
+}
+/* line 168, ../sass/_videos.scss */
+.courses .courses-dropdown {
+  float: right;
+}
+/* line 171, ../sass/_videos.scss */
+.courses h2 {
+  font-size: 20px;
+}
+/* line 174, ../sass/_videos.scss */
+.courses .courses-wrapper {
+  margin-right: -20px;
+}
+/* line 178, ../sass/_videos.scss */
+.courses .course {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: left;
+  width: calc(33.3% - 20px);
+  padding: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  /* border: 1px solid rgba(0,0,0,.09); */
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 160ms;
+  background-color: #274059;
+  border-radius: 3px;
+  box-shadow: 0 0 8px #0c1f31;
+}
+@media (max-width: 540px) {
+  /* line 178, ../sass/_videos.scss */
+  .courses .course {
+    width: 100%;
+  }
+}
+/* line 196, ../sass/_videos.scss */
+.courses .course h1 {
+  border: none;
+  font-family: "Lato";
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  color: white;
+}
+/* line 204, ../sass/_videos.scss */
+.courses .course img {
+  width: calc(100% + 6px);
+  max-width: calc(100% + 6px);
+  margin: -3px;
+}
+/* line 209, ../sass/_videos.scss */
+.courses .course .description {
+  padding: 20px;
+  padding-top: 15px;
+  height: 81px;
+  color: white;
+}
+
+/* line 219, ../sass/_videos.scss */
+.courses, .course {
+  /* Css magic that keeps it 16x9, background in the center. */
+  /* It's just an image, style other things elsewhere. */
+}
+/* line 222, ../sass/_videos.scss */
+.courses .wrapper, .course .wrapper {
+  width: 100%;
+  position: relative;
+}
+/* line 226, ../sass/_videos.scss */
+.courses .wrapper:after, .course .wrapper:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+/* line 232, ../sass/_videos.scss */
+.courses .thumbnail, .course .thumbnail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin: 0;
+  border: none;
+  background-color: #1f364d;
+}
+
+/* Modals */
+/* line 5, ../sass/style.scss */
+.modal-dialog {
+  margin-top: 90px !important;
+}
+
+/* line 8, ../sass/style.scss */
+.modal-content {
+  background: #1f364d;
+  text-align: center;
+}
+/* line 12, ../sass/style.scss */
+.modal-content .modal-header {
+  background: #274059;
+  border: none;
+  position: relative;
+}
+/* line 16, ../sass/style.scss */
+.modal-content .modal-header .close {
+  color: white;
+  position: absolute;
+  top: 5px;
+  right: -10px;
+}
+/* line 23, ../sass/style.scss */
+.modal-content p, .modal-content b {
+  color: white;
+}
+/* line 25, ../sass/style.scss */
+.modal-content p a, .modal-content b a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Pagination */
+/* Pagination */
+/* line 36, ../sass/style.scss */
+.pagination {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  text-align: center;
+}
+/* line 42, ../sass/style.scss */
+.pagination .fa {
+  margin-top: 6px;
+  color: #999;
+}
+
+/* Footer */
+/* line 50, ../sass/style.scss */
+footer {
+  min-height: 40px;
+  padding: 20px;
+  background-color: #091a2b;
+  color: #274059;
+  text-align: center;
+}

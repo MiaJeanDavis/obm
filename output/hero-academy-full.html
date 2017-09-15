@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/styles/css/vendor.css">
+    <link rel="stylesheet" href="/static/styles/css/style.css">
+    <!-- Scripts -->
+    <script src="/static/js/vendor/jquery.min.js"></script>
+    <script src="/static/js/vendor/tether.min.js"></script>
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
+    <script src="/static/js/vendor/js.cookie.js"></script>
+    <script src="/static/js/vendor/jquery.query-object.js"></script>
+    <script src="/static/js/obv.js"></script>
+
+<title>8X Hero Academy</title>
+</head>
+
+<body>
+
+<div class="page">
+<div class="course">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+	<article>
+	  <h1>8X Hero Academy</h1>
+	  <!-- Player -->
+	  <video
+	     id="video"
+	     class="video-js vjs-default-skin vjs-fluid"
+	     controls
+	     autoplay
+	     width="960" height="540"
+	     data-setup='{ "techOrder": ["youtube"],
+	     "playbackRates": [ 0.75, 1, 1.25, 1.5, 2] }'
+	     >
+	  </video>	
+
+	  <!-- Playlist container -->
+	  <div class="video-list"></div>
+
+	  <!-- Paypal Button -->
+
+	  
+	  <!-- If it's a premium course - lead to vault -->
+	  <div class="subscription-form">
+	    <a href="/vault" class="btn btn-cta">
+	      Course library
+	    </a>
+	  </div>
+	  <br/>	  
+	</article>
+      </div> <!-- End col-md-12 -->
+    </div>   <!-- End .row -->
+
+    <!-- Suggestions -->
+  </div>  <!-- end .container -->
+</div>	<!-- End .video-course -->
+
+
+<!-- Generate playlist -->
+<script>
+var slug = "hero-academy-full"
+var videos = [ "VQOvM8tabbk","9Wcj3eia6To","T0xN7XrxB4Q","qlyGf6WFmcg","ryjUVxSszfw","XuwLFUylyTQ","w8a33aoOsBU","13gm5i9QLaE","r8EVerRDKgo","XP2o_hJRfmM","t3h0ucqioS8","lYXx9ZERAVw","qgzTWI91NAI","e0MQX8PTZkk","4nkElhyw5Vg","zL-_JqRW-J8","UFjDeoU11-E","hAMsJuTgjVQ","_QSk5NgOLAY","fxEra4_KA4c","Q79sTRh8xNE","vkG0Eeb6vJg","bbZdDPHbrZM","0ybBQqUChuY","PAvK47FE89w","549k6NZikEc","NFb8wq7bg8Q","LIkXjXRv04w","FUadRkpEddg","85_BnXZMx28","P4TzIV4g4uI","WPwetepkZFI","wScVaEwA8Qs","bPWqKaPX5S4","OitGY-MNq2w","saPJB4aUFrA","rq1QQalLDS0","Ae96vMduZQ0","FeISSyMOMDA","sXyfiKawSUs","T1RAqseNzPg","9zkc5bGrqdY","OehLTICqyxU","jLlu77W1ga8","QYCH9amQEks","wGSnFlqEIRQ","iKBkE_bAGzc","wqU_JmUar8U","KY04NA-3GCM","4ty7CWCE5Yk","17oaif-bkTI","Glj79aCz-YA","Tc2rOsLBryo","58z1dx-NNbs","Xo7LdofsJqM","3p0dJuO8HVc","vye4fzpjCWo","BhPBewy0P8Q","457XU7A2mZE","jY7VW7z9TRo","hbn4gS9ouv8","3OKHfX9UYKY","JY07V4BgfYg","APMppT-SwbQ","4Ud1R7FMyYY","u-2q4jHbJG8","WxSPGHDdBGM" ]
+var playlist = videos.map(function (video, index) {
+    return {
+	sources: [{
+	    src: "https://www.youtube.com/watch?v="+video,
+	    type: "video/youtube",
+	}],
+	poster: "https://img.youtube.com/vi/"+video+"/hqdefault.jpg"
+    }
+})
+</script>
+
+<!-- Video -->
+<script src="/static/js/vendor/video.js"></script>
+<script src="/static/js/vendor/Youtube.min.js"></script>
+<script src="/static/js/vendor/videojs-playlist.min.js"></script>
+<script src="/static/js/vendor/videojs.imageOverlay.js"></script>
+<script src="/static/js/vendor/videojs-remember.js"></script>
+<script src="/static/js/player.js"></script>
+
+</div>
+
+<footer>
+  Contact: contact.obvault@gmail.com
+</footer>
+
+<div id="thankyou-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal">&times;</button>	
+	<h1>Thank you for your purchase!</h1>
+      </div>
+
+      <div class="modal-body">
+	<p>Make sure to bookmark this page so you can return to it later:</p>
+	<p>
+	  <a href="https://obvault.github.io/vault">
+	    https://obvault.github.io/vault
+	  </a>
+	</p>
+	<!-- <p>(I will also email you this link within 24 hours)a</p> -->
+	<p>If you have any questions, don't hesitate to contact me at <b>contact.obvault@gmail.com</b></p>
+      </div>
+    </div>
+  </div>
+</div>	 <!-- End .modal -->
+
+
+
+
+</body>
+</html>
